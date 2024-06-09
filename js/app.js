@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 (function (){
     myObj.queue = {
-        // ANCHOR MENU BEGIN
+        // HEADER BEGIN
         anchorMenu: function() {
             const anchorMenu = document.querySelector('.site-header__anchor-menu');
+            const langBtn = document.querySelector('.site-header__langs-active');
+
             let blockId;
             anchorMenu.querySelectorAll('a').forEach((item) => {
                 item.addEventListener('click', (e) => {
@@ -28,8 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById(blockId).scrollIntoView({behavior: "smooth"});
                 })
             })
+            
+            langBtn.addEventListener('click', () => {
+                langBtn.classList.toggle('active');
+                document.querySelector('.site-header__langs-list').classList.toggle('active');
+
+            })
         },
-        // ANCHOR MENU END
+        // HEADER END
 
         // VIDEO BTN BEGIN
         videoBtn: function() {
