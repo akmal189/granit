@@ -147,7 +147,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
             }
-        }
+        },
         // FLEET SLIDER END
+
+        // TO TOP BTN BEGIN
+        toTopBtn: function() {
+            window.addEventListener('scroll', () => {
+                if(document.scrollingElement.scrollTop > 800) {
+                    document.querySelector('.to-top-btn a').classList.add('active')
+                } else {
+                    document.querySelector('.to-top-btn a').classList.remove('active')
+                }
+            });
+            document.querySelector('.to-top-btn a').addEventListener('click', () => {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        }
+        // TO TOP BTN END
     }
 }())

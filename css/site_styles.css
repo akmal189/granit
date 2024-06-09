@@ -780,6 +780,19 @@ img, iframe, video {
     top: calc(50% - 8px);
     background: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.8489 2.37911L11.8496 2.87886C13.686 3.02279 14.8991 4.27416 14.9011 6.1932L14.9083 11.8104C14.9109 13.9027 13.5965 15.19 11.4895 15.1934L6.34291 15.2C4.24912 15.2027 2.9182 13.8847 2.91557 11.7864L2.90833 6.23518C2.9057 4.30348 4.07601 3.05544 5.91244 2.88686L5.91178 2.38711C5.91112 2.09392 6.12833 1.87336 6.41795 1.87336C6.70757 1.8727 6.92478 2.09259 6.92544 2.38577L6.9261 2.85221L10.8359 2.84688L10.8353 2.38044C10.8346 2.08726 11.0518 1.86737 11.3414 1.8667C11.6245 1.86603 11.8483 2.08592 11.8489 2.37911ZM3.92264 6.44108L13.8881 6.42775V6.19453C13.8598 4.76192 13.141 4.01029 11.8509 3.89835L11.8515 4.41143C11.8515 4.69795 11.6284 4.92517 11.3454 4.92517C11.0558 4.92583 10.8379 4.69928 10.8379 4.41276L10.8372 3.87303L6.92741 3.87836L6.92807 4.41742C6.92807 4.70461 6.71151 4.93117 6.4219 4.93117C6.13228 4.93183 5.91441 4.70594 5.91441 4.41876L5.91375 3.90568C4.63023 4.03428 3.92001 4.78857 3.92198 6.23385L3.92264 6.44108ZM11.0683 9.46956V9.47689C11.0748 9.7834 11.325 10.016 11.6284 10.0093C11.9246 10.002 12.1609 9.74809 12.1543 9.44157C12.1405 9.14839 11.9029 8.90917 11.6073 8.90984C11.3046 8.9165 11.0676 9.16305 11.0683 9.46956ZM11.612 12.4614C11.3092 12.4547 11.065 12.2022 11.0643 11.8957C11.0577 11.5892 11.3006 11.3353 11.6034 11.328H11.61C11.9193 11.328 12.1701 11.5805 12.1701 11.8937C12.1708 12.2069 11.9207 12.4607 11.612 12.4614ZM8.3564 9.48022C8.36957 9.78673 8.62035 10.0259 8.92313 10.0126C9.21933 9.99863 9.45563 9.74542 9.44246 9.43891C9.43522 9.13906 9.19168 8.90584 8.89548 8.90651C8.5927 8.91983 8.35574 9.17371 8.3564 9.48022ZM8.92576 12.4314C8.62298 12.4447 8.37286 12.2055 8.35904 11.899C8.35904 11.5925 8.59534 11.3393 8.89812 11.3253C9.19432 11.3246 9.43851 11.5578 9.4451 11.857C9.45892 12.1642 9.22196 12.4174 8.92576 12.4314ZM5.64454 9.50354C5.65771 9.81005 5.90849 10.0499 6.21127 10.0359C6.50747 10.0226 6.74377 9.76874 6.72994 9.46223C6.72336 9.16238 6.47982 8.92916 6.18297 8.92983C5.88018 8.94316 5.64388 9.19703 5.64454 9.50354ZM6.2139 12.4347C5.91112 12.4487 5.661 12.2089 5.64717 11.9023C5.64652 11.5958 5.88348 11.342 6.18626 11.3286C6.48245 11.328 6.72665 11.5612 6.73324 11.861C6.74706 12.1675 6.51076 12.4214 6.2139 12.4347Z' fill='%2379797B'/%3E%3C/svg%3E%0A") 50% no-repeat;
 }
+.offers-block__slider .slider-item__share a {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: url("data:image/svg+xml,%3Csvg width='23' height='25' viewBox='0 0 23 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.4236 15.8148C17.0242 15.8148 15.7713 16.4532 14.9401 17.4539L9.53262 14.3838C9.70077 13.9106 9.7932 13.4018 9.7932 12.8715C9.7932 12.3414 9.70077 11.8326 9.53262 11.3594L14.9396 8.28851C15.7708 9.28953 17.0239 9.92815 18.4234 9.92815C20.9198 9.92815 22.9508 7.89643 22.9508 5.399C22.951 2.90231 20.92 0.871216 18.4236 0.871216C15.9269 0.871216 13.8957 2.90231 13.8957 5.39889C13.8957 5.92913 13.988 6.43804 14.1563 6.91135L8.74898 9.98234C7.9178 8.98184 6.66507 8.34365 5.26595 8.34365C2.76894 8.34365 0.737427 10.3747 0.737427 12.8714C0.737427 15.368 2.76894 17.3991 5.26595 17.3991C6.66507 17.3991 7.9177 16.7609 8.74887 15.7605L14.1563 18.8308C13.988 19.3041 13.8956 19.8131 13.8956 20.3434C13.8956 22.84 15.9268 24.8711 18.4235 24.8711C20.9199 24.8711 22.9509 22.8399 22.9509 20.3434C22.951 17.8464 20.92 15.8148 18.4236 15.8148ZM18.4236 2.45561C20.0464 2.45561 21.3666 3.77594 21.3666 5.39889C21.3666 7.02268 20.0464 8.34365 18.4236 8.34365C16.8006 8.34365 15.4801 7.02268 15.4801 5.39889C15.4801 3.77594 16.8006 2.45561 18.4236 2.45561ZM5.26605 15.8148C3.64268 15.8148 2.32193 14.4944 2.32193 12.8715C2.32193 11.2485 3.64268 9.92815 5.26605 9.92815C6.88879 9.92815 8.20891 11.2485 8.20891 12.8715C8.20891 14.4944 6.88868 15.8148 5.26605 15.8148ZM18.4236 23.2868C16.8006 23.2868 15.4801 21.9664 15.4801 20.3435C15.4801 18.7201 16.8006 17.3992 18.4236 17.3992C20.0464 17.3992 21.3666 18.7201 21.3666 20.3435C21.3666 21.9664 20.0464 23.2868 18.4236 23.2868Z' fill='black'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+.offers-block__slider .slider-item__share a:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='25' viewBox='0 0 23 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.4236 15.8148C17.0242 15.8148 15.7713 16.4532 14.9401 17.4539L9.53262 14.3838C9.70077 13.9106 9.7932 13.4018 9.7932 12.8715C9.7932 12.3414 9.70077 11.8326 9.53262 11.3594L14.9396 8.28851C15.7708 9.28953 17.0239 9.92815 18.4234 9.92815C20.9198 9.92815 22.9508 7.89643 22.9508 5.399C22.951 2.90231 20.92 0.871216 18.4236 0.871216C15.9269 0.871216 13.8957 2.90231 13.8957 5.39889C13.8957 5.92913 13.988 6.43804 14.1563 6.91135L8.74898 9.98234C7.9178 8.98184 6.66507 8.34365 5.26595 8.34365C2.76894 8.34365 0.737427 10.3747 0.737427 12.8714C0.737427 15.368 2.76894 17.3991 5.26595 17.3991C6.66507 17.3991 7.9177 16.7609 8.74887 15.7605L14.1563 18.8308C13.988 19.3041 13.8956 19.8131 13.8956 20.3434C13.8956 22.84 15.9268 24.8711 18.4235 24.8711C20.9199 24.8711 22.9509 22.8399 22.9509 20.3434C22.951 17.8464 20.92 15.8148 18.4236 15.8148ZM18.4236 2.45561C20.0464 2.45561 21.3666 3.77594 21.3666 5.39889C21.3666 7.02268 20.0464 8.34365 18.4236 8.34365C16.8006 8.34365 15.4801 7.02268 15.4801 5.39889C15.4801 3.77594 16.8006 2.45561 18.4236 2.45561ZM5.26605 15.8148C3.64268 15.8148 2.32193 14.4944 2.32193 12.8715C2.32193 11.2485 3.64268 9.92815 5.26605 9.92815C6.88879 9.92815 8.20891 11.2485 8.20891 12.8715C8.20891 14.4944 6.88868 15.8148 5.26605 15.8148ZM18.4236 23.2868C16.8006 23.2868 15.4801 21.9664 15.4801 20.3435C15.4801 18.7201 16.8006 17.3992 18.4236 17.3992C20.0464 17.3992 21.3666 18.7201 21.3666 20.3435C21.3666 21.9664 20.0464 23.2868 18.4236 23.2868Z' fill='%23FF862E'/%3E%3C/svg%3E%0A");
+}
 
 .big-slider {
     margin-bottom: 66px;
@@ -1010,13 +1023,76 @@ img, iframe, video {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 9px 30px;
 }
 .form-block__inner form .form-inner .form-field {
     width: calc(33.3% - 20px);
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+}
+.form-block__inner form .form-inner .form-field.form-button {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    width: auto;
 }
 .form-block__inner form .form-inner .form-field.type-checkbox {
     width: 100%;
+}
+.form-block__inner form .form-inner .form-field.type-checkbox label {
+    cursor: pointer;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #79797B;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-block__inner form .form-inner .form-field.type-checkbox label:hover {
+    color: #000;
+}
+.form-block__inner form .form-inner .form-field.type-checkbox label:hover input:after {
+    -webkit-box-shadow: 0 0 0 1px #FF862E !important;
+            box-shadow: 0 0 0 1px #FF862E !important;
+}
+.form-block__inner form .form-inner .form-field.type-checkbox label input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    margin: 0;
+    position: relative;
+}
+.form-block__inner form .form-inner .form-field.type-checkbox label input[type=checkbox]:checked:after {
+    background: #FF862E;
+}
+.form-block__inner form .form-inner .form-field.type-checkbox label input[type=checkbox]:after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: calc(50% - 7px);
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0 0 0 1px #9F9FA1;
+            box-shadow: 0 0 0 1px #9F9FA1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
 }
 .form-block__inner form .form-inner .form-field input[type=text] {
     font-size: 12px;
@@ -1033,6 +1109,7 @@ img, iframe, video {
     padding: 0;
     padding-bottom: 16px;
     padding-right: 15px;
+    width: 100%;
 }
 .form-block__inner form .form-inner .form-field input[type=text]::-webkit-input-placeholder {
     color: #000;
@@ -1055,6 +1132,23 @@ img, iframe, video {
 .form-block__inner form .form-inner .form-field input[type=text]:focus {
     border-color: #FF862E;
 }
+.form-block__inner form .form-inner .form-field input[type=submit] {
+    background: #FF862E;
+    padding: 13px;
+    cursor: pointer;
+    min-width: 192px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-block__inner form .form-inner .form-field input[type=submit]:hover {
+    color: #fff;
+}
 .form-block__inner form .form_success {
     display: none;
 }
@@ -1071,4 +1165,202 @@ img, iframe, video {
 .form-block__title div {
     font-style: italic;
     font-weight: 300;
+}
+
+.site-footer {
+    padding: 23px 20px 15px;
+    background: #E9E9E9;
+}
+.site-footer__inner {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.site-footer__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 19px;
+}
+.site-footer__map {
+    width: calc(100% - 670px);
+}
+.site-footer__map iframe {
+    width: 100%;
+    max-height: 244px;
+}
+.site-footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 17px;
+    width: 670px;
+}
+.site-footer__address {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
+    max-width: 370px;
+}
+.site-footer__address-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    font-size: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.site-footer__address-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000;
+}
+.site-footer__contacts-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 14px 20px;
+}
+.site-footer__contacts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 11px;
+    width: calc(30% - 10px);
+}
+.site-footer__contacts-item:nth-child(even) {
+    width: calc(70% - 10px);
+}
+.site-footer__contacts-icon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
+}
+.site-footer__contacts-body .title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #FF862E;
+}
+.site-footer__contacts-body .phones a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.site-footer__contacts-body .phones a:hover {
+    color: #FF862E;
+}
+.site-footer__contacts-body .mails a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.site-footer__contacts-body .mails a:hover {
+    color: #FF862E;
+}
+.site-footer__copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 20px;
+}
+.site-footer__site-copy {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #79797B;
+}
+.site-footer__site-copy a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.site-footer__site-copy a:hover {
+    color: #FF862E;
+}
+.site-footer__design-copy {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #79797B;
+    text-align: right;
+}
+
+.to-top-btn {
+    position: fixed;
+    right: 22px;
+    bottom: 20px;
+    z-index: 20;
+}
+.to-top-btn a {
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    will-change: transform;
+    opacity: 0;
+    visibility: hidden;
+    background: url("data:image/svg+xml,%3Csvg width='15' height='21' viewBox='0 0 15 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.20729 0.808945C7.81676 0.418421 7.1836 0.418421 6.79308 0.808945L0.429115 7.17291C0.0385903 7.56343 0.0385904 8.1966 0.429115 8.58712C0.819639 8.97764 1.4528 8.97764 1.84333 8.58712L7.50018 2.93027L13.157 8.58712C13.5476 8.97764 14.1807 8.97764 14.5713 8.58712C14.9618 8.1966 14.9618 7.56343 14.5713 7.17291L8.20729 0.808945ZM8.50018 20.7338L8.50018 1.51605L6.50018 1.51605L6.50018 20.7338L8.50018 20.7338Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat #000;
+}
+.to-top-btn a:hover {
+    background-color: #FF862E;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+}
+.to-top-btn a.active {
+    opacity: 1;
+    visibility: visible;
 }
