@@ -111,8 +111,24 @@ img, iframe, video {
                 line-height: 22px;
                 text-align: left;
                 transition: all .3s ease;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 0;
+                    transition: all .5s ease;
+                    background: $maincolor;
+                    bottom: -1px;
+                    left: 0;
+                }
                 &:hover {
                     color: $maincolor;
+                    @media all and (min-width: 1025px) {
+                        &:before {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -241,6 +257,7 @@ img, iframe, video {
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: pulse-animation 2s infinite;
     }
     &__burgerBtn {
         display: none;
@@ -566,6 +583,7 @@ img, iframe, video {
                     background: $maincolor;
                     border-color: $maincolor;
                     color: #fff;
+                    animation: pulse-animation 2s infinite;
                 }
             }
         }
@@ -1544,3 +1562,14 @@ img, iframe, video {
     padding: 10px;
     color: #fff;
 }
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba($maincolor, .5);
+    }
+    50% {
+        box-shadow: 0 0 0 4px rgba($maincolor, .5);
+    }
+    100% {
+        box-shadow: 0 0 0 0px rgba($maincolor, .5);
+    }
+  }

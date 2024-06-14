@@ -158,9 +158,26 @@ img, iframe, video {
     text-align: left;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    position: relative;
+}
+.site-header__anchor-menu li a:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #FF862E;
+    bottom: -1px;
+    left: 0;
 }
 .site-header__anchor-menu li a:hover {
     color: #FF862E;
+}
+@media all and (min-width: 1025px) {
+    .site-header__anchor-menu li a:hover:before {
+        width: 100%;
+    }
 }
 .site-header__site-langs {
     position: relative;
@@ -317,6 +334,8 @@ img, iframe, video {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-animation: pulse-animation 2s infinite;
+            animation: pulse-animation 2s infinite;
 }
 .site-header__burgerBtn {
     display: none;
@@ -715,6 +734,8 @@ img, iframe, video {
     background: #FF862E;
     border-color: #FF862E;
     color: #fff;
+    -webkit-animation: pulse-animation 2s infinite;
+            animation: pulse-animation 2s infinite;
 }
 .services-block__transport {
     width: 583px;
@@ -1919,4 +1940,34 @@ img, iframe, video {
 #lg-counter {
     padding: 10px;
     color: #fff;
+}
+
+@-webkit-keyframes pulse-animation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+                box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 4px rgba(255, 134, 46, 0.5);
+                box-shadow: 0 0 0 4px rgba(255, 134, 46, 0.5);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+                box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+                box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 4px rgba(255, 134, 46, 0.5);
+                box-shadow: 0 0 0 4px rgba(255, 134, 46, 0.5);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+                box-shadow: 0 0 0 0px rgba(255, 134, 46, 0.5);
+    }
 }
