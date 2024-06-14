@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>Главная</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css"/>
     <link rel="stylesheet" href="css/site_styles.css">
 </head>
 <body>
@@ -49,6 +50,7 @@
                         <img src="images/phone_icon.svg" alt="phone_icon">
                     </div>
                 </div>
+                <div class="site-header__burgerBtn"></div>
             </div>
         </header>
 
@@ -56,8 +58,8 @@
             <div class="video-block__inner">
                 <div class="video">
                     <!-- <div class="video-block__play-btn"></div> -->
-                    <!-- <video src="files/granit_video.mp4" poster="images/granit_video_poster.png"  preload="auto" loop playsinline autobuffer></video> -->
-                    <iframe src="https://www.youtube.com/embed/OFAvAHw6fUU?si=Y3esnC7X7a7s6xPf&controls=0" frameborder="0" controls="false"></iframe>
+                    <video src="files/granit_video.mp4" poster="images/granit_video_poster.png" muted autoplay  preload="auto" loop playsinline autobuffer></video>
+                    <!-- <iframe src="https://www.youtube.com/embed/OFAvAHw6fUU?si=Y3esnC7X7a7s6xPf&controls=0" frameborder="0" controls="false"></iframe> -->
                 </div>
                 <div class="video-block__socials">
                     <div class="video-block__socials-item">
@@ -74,7 +76,7 @@
             </div>
         </section>
 
-        <section class="first-block" id="block1">
+        <section class="first-block slideInUp wow" id="block1">
             <div class="first-block__inner">
                 <div class="first-block__inner-wr">
                     <div class="first-block__logo">
@@ -92,7 +94,7 @@
         <section class="services-block" id="block2">
             <div class="services-block__inner">
                 <div class="services-block__inner-wr">
-                    <div class="services-block__shop">
+                    <div class="services-block__shop wow slideInLeft">
                         <div class="services-block__shop-title">
                             <div>Магазин</div>строительных материалов 
                         </div>
@@ -147,7 +149,7 @@
                         </div>
                     </div>
     
-                    <div class="services-block__transport">
+                    <div class="services-block__transport wow slideInRight">
                         <div class="services-block__transport-title">
                             <div>Международный </div>транспорт
                         </div>
@@ -335,7 +337,7 @@
             </div>
         </section>
 
-        <section class="offers-block" id="block3">
+        <section class="offers-block slideInUp wow" id="block3">
             <div class="offers-block__inner">
                 <div class="offers-block__inner-wr">
                     <div class="offers-block__left">
@@ -359,9 +361,6 @@
                                     <div class="slider-item__text">Являясь всего лишь частью общей картины, базовые сценарии поведения пользователей ограничены исключительно образом мышления. Принимая во внимание показатели успешности, существующая </div>
                                     <div class="slider-item__bottom">
                                         <div class="slider-item__date">10.04 - 20.08.2024</div>
-                                        <div class="slider-item__share">
-                                            <a href="#"></a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -374,9 +373,6 @@
                                     <div class="slider-item__text">Текст под заголовком 2</div>
                                     <div class="slider-item__bottom">
                                         <div class="slider-item__date">дата слайд 2</div>
-                                        <div class="slider-item__share">
-                                            <a href="#"></a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -389,9 +385,6 @@
                                     <div class="slider-item__text">Текст под заголовком 3</div>
                                     <div class="slider-item__bottom">
                                         <div class="slider-item__date">дата слайд 3</div>
-                                        <div class="slider-item__share">
-                                            <a href="#"></a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -401,7 +394,7 @@
             </div>
         </section>
 
-        <section class="big-slider" id="block4">
+        <section class="big-slider slideInUp wow" id="block4">
             <div class="big-slider__inner">
                 <div class="big-slider__title">
                     <h1 class="title">Крупнейший магазин строительных материалов регион</h1>
@@ -426,44 +419,48 @@
             </div>
         </section>
 
-        <section class="partners-block" id="block5">
+        <section class="partners-block slideInUp wow" id="block5">
             <div class="partners-block__inner">
                 <div class="partners-block__inner-wr">
                     <div class="partners-block__title">ПАРТНЕРЫ</div>
                     <div class="partners-block__list">
-                        <div class="partners-block__item">
-                            <img src="images/supraten.jpeg" alt="partner1">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/uniplast.png" alt="partner1">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/bpm-cement.jpg" alt="partner1">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/catadeni-lux.jpg" alt="partner2">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/profmetgrup.jpg" alt="partner3">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/cheton.png" alt="partner4">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/giramondo.png" alt="partner5">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/le_bridge.jpeg" alt="partner6">
-                        </div>
-                        <div class="partners-block__item">
-                            <img src="images/premium-profil.png" alt="partner7">
+                        <div class="swiper">
+                            <div class="swiper-wrapper grid-container">
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/supraten.jpeg" alt="partner1">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/uniplast.png" alt="partner1">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/bpm-cement.jpg" alt="partner1">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/catadeni-lux.jpg" alt="partner2">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/profmetgrup.jpg" alt="partner3">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/cheton.png" alt="partner4">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/giramondo.png" alt="partner5">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/le_bridge.jpeg" alt="partner6">
+                                </div>
+                                <div class="partners-block__item swiper-slide">
+                                    <img src="images/premium-profil.png" alt="partner7">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="fleet-slider">
+        <section class="fleet-slider slideInUp wow">
             <div class="fleet-slider__inner">
                 <div class="fleet-slider__title-wr">
                     <div class="fleet-slider__title">
@@ -474,7 +471,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fleet-slider__slier swiper">
+                <div class="fleet-slider__slider swiper">
                     <div class="swiper-wrapper">
                         <div class="fleet-slider__item swiper-slide">
                             <img src="images/fleet1.jpg" alt="fleet1">
@@ -487,7 +484,7 @@
             </div>
         </section>
 
-        <section class="form-block">
+        <section class="form-block slideInUp wow">
             <div class="form-block__inner">
                 <form action="POST">
                     <div class="form-block__title">
@@ -515,7 +512,7 @@
             </div>
         </section>
 
-        <footer class="site-footer" id="block6">
+        <footer class="site-footer slideInUp wow" id="block6">
             <div class="site-footer__inner">
                 <div class="site-footer__top">
                     <div class="site-footer__map">
@@ -616,8 +613,16 @@
     <a href="javascript:void(0);"></a>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<div class="burger_menu">
+    <div class="burger_menu__closer"></div>
+    <div class="burger_menu__inner">
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
