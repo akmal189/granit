@@ -296,6 +296,11 @@ img, iframe, video {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media all and (max-width: 1025px) {
+            right: 14px;
+            bottom: 18px;
+            gap: 8px;
+        }
     }
     &__socials-item {
         width: 32px;
@@ -1281,6 +1286,10 @@ img, iframe, video {
 			}
 			.form_success {
 				display: none;
+                align-self: center;
+                @media all and (max-width: 1025px) {
+                    align-self: unset;
+                }
 			}
 		}
 	}

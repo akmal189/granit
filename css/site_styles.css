@@ -377,6 +377,13 @@ img, iframe, video {
             flex-direction: column;
     gap: 16px;
 }
+@media all and (max-width: 1025px) {
+    .video-block__socials {
+        right: 14px;
+        bottom: 18px;
+        gap: 8px;
+    }
+}
 .video-block__socials-item {
     width: 32px;
     height: 32px;
@@ -1598,6 +1605,16 @@ img, iframe, video {
 }
 .form-block__inner form .form_success {
     display: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+@media all and (max-width: 1025px) {
+    .form-block__inner form .form_success {
+        -ms-flex-item-align: unset;
+            -ms-grid-row-align: unset;
+            align-self: unset;
+    }
 }
 .form-block__title {
     font-size: 20px;
