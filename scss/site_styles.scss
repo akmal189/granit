@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     line-height: normal;
+    font-family: $mainfont;
 }
 h1 {
     font-size: 28px;
@@ -99,7 +100,7 @@ img, iframe, video {
         @media all and (max-width: 1200px) {
             flex-direction: column;
             align-items: flex-start;
-            gap: 15px;
+            gap: 25px;
         }
         li {
 
@@ -112,6 +113,9 @@ img, iframe, video {
                 text-align: left;
                 transition: all .3s ease;
                 position: relative;
+                @media all and (max-width: 1200px) {
+                    font-size: 18px;
+                }
                 &:before {
                     content: '';
                     position: absolute;
@@ -202,6 +206,9 @@ img, iframe, video {
         flex-direction: column;
         align-items: flex-end;
         gap: 2px;
+        @media all and (max-width: 1200px) {
+            gap: 0;
+        }
     }
     &__contacts-phones {
 
@@ -217,7 +224,7 @@ img, iframe, video {
                 @media all and (max-width: 1200px) {
                     font-size: 16px;
                     font-weight: 400;
-                    line-height: 26px;
+                    line-height: normal;
                 }
                 &:hover {
                     color: $maincolor;
@@ -239,7 +246,7 @@ img, iframe, video {
                 @media all and (max-width: 1200px) {
                     font-size: 12px;
                     font-weight: 400;
-                    line-height: 18px;
+                    line-height: normal;
                 }
                 &:hover {
                     color: $maincolor;
@@ -438,7 +445,8 @@ img, iframe, video {
 .services-block {
     padding: 75px 20px;
     @media all and (max-width: 1025px) {
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 45px;
     }
     &__inner {
         width: 100%;
@@ -716,6 +724,9 @@ img, iframe, video {
     .swiper-pagination {
         margin-top: 20px;
         font-size: 0;
+        @media all and (max-width: 1025px) {
+            margin: 0;
+        }
         .swiper-pagination-bullet {
             width: 10px;
             height: 10px;
@@ -905,11 +916,11 @@ img, iframe, video {
     @media all and (max-width: 1025px) {
         padding-top: 118px;
         position: relative;
-        margin-bottom: 35px;
+        margin-bottom: 37px;
     }
     &__inner {
         width: 100%;
-        max-width: calc((100% + 1340px) / 2);
+        max-width: calc((100% + 1174px) / 2);
         margin-left: auto;
         display: flex;
         align-items: flex-start;
@@ -951,6 +962,9 @@ img, iframe, video {
         display: flex;
         margin-top: 24px;
         gap: 16px;
+        @media all and (max-width: 1025px) {
+            margin: 0;
+        }
         .slider-button {
             position: static;
             margin-top: 0;
@@ -1023,7 +1037,8 @@ img, iframe, video {
         display: flex;
         align-items: flex-start;
         width: 100%;
-        max-width: 1061px;
+        max-width: 1161px;
+        margin: 0 auto;
         @media all and (max-width: 1025px) {
             max-width: 100%;
             flex-direction: column;
@@ -1044,6 +1059,7 @@ img, iframe, video {
             max-width: 100%;
             margin-bottom: 10px;
             padding-left: 20px;
+            margin-top: 0;
         }
     }
     &__list {
@@ -1096,8 +1112,8 @@ img, iframe, video {
         position: absolute;
         top: 0;
         width: 100%;
-        max-width: 1340px;
-        left: calc(50% - 670px);
+        max-width: 1200px;
+        left: calc(50% - 600px);
         z-index: 2;
         @media all and (max-width: 1340px) {
             left: 0;
@@ -1337,7 +1353,7 @@ img, iframe, video {
     background: #E9E9E9;
     &__inner {
         width: 100%;
-        max-width: 1340px;
+        max-width: 1160px;
         margin: 0 auto;
     }
     &__top {
@@ -1350,7 +1366,7 @@ img, iframe, video {
         }
     }
     &__map {
-        width: calc(100% - 670px);
+        width: calc(100% - 310px);
         @media all and (max-width: 1025px) {
             width: calc(100% + 40px);
             margin: 0 -20px;
@@ -1401,12 +1417,12 @@ img, iframe, video {
     &__contacts-item {
         display: flex;
         gap: 11px;
-        width: calc(30% - 10px);
+        width: calc(40% - 10px);
         @media all and (max-width: 641px) {
             width: 100%;
         }
         &:nth-child(even) {
-            width: calc(70% - 10px);
+            width: calc(60% - 10px);
             @media all and (max-width: 641px) {
                 width: 100%;
             }
@@ -1546,13 +1562,13 @@ img, iframe, video {
     }
     &__closer {
         position: absolute;
-        top: 0;
-        right: 280px;
+        right: 5px;
+        top: 5px;
         width: 40px;
         height: 40px;
         cursor: pointer;
         z-index: 1;
-        background: url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.353553' y1='0.646447' x2='31.3536' y2='31.6464' stroke='white'/%3E%3Cline x1='31.3536' y1='1.35355' x2='0.353553' y2='32.3536' stroke='white'/%3E%3C/svg%3E%0A") 50%/15px no-repeat rgba(#000, .8);
+        background: url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.353553' y1='0.646447' x2='31.3536' y2='31.6464' stroke='black'/%3E%3Cline x1='31.3536' y1='1.35355' x2='0.353553' y2='32.3536' stroke='black'/%3E%3C/svg%3E%0A") 50%/15px no-repeat $maincolor;
     }
 }
 .lg-hide-sub-html .lg-sub-html, .lg-next, .lg-pager-outer, .lg-prev, .lg-toolbar {
@@ -1572,4 +1588,63 @@ img, iframe, video {
     100% {
         box-shadow: 0 0 0 0px rgba($maincolor, .5);
     }
-  }
+}
+
+.cookies-popup {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 18px 26px;
+    padding-right: 15px;
+    border-radius: 5px 0 0 5px;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 560px;
+    background: #252833;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 21;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__closer {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='1.17338' y1='0.646447' x2='16.1734' y2='15.6464' stroke='white'/%3E%3Cline x1='16.1734' y1='1.35355' x2='1.17338' y2='16.3535' stroke='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+    }
+    a {
+        text-decoration: underline;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__btn {
+        a {
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 250px;
+            padding: 10px 22px;
+            background: #fff;
+            color: #252833;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            font-family: "Rubik", sans-serif;
+            &:hover {
+                background: #6eb9fc;
+            }
+        }
+    }
+    
+}
