@@ -388,6 +388,9 @@ img, iframe, video {
 }
 .video-block__inner video {
     width: 100%;
+    max-height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .video-block__inner iframe {
     width: 100%;
@@ -663,7 +666,8 @@ img, iframe, video {
     }
 }
 .services-block__shop-images .swiper-pagination {
-    bottom: 212px;
+    bottom: auto;
+    top: 430px;
     right: 0;
     text-align: right;
     padding-right: 16px;
